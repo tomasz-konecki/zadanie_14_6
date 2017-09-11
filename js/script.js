@@ -11,9 +11,34 @@ var Counter = React.createClass({
         });
     },
 
+    decrement: function() {
+        this.setState({
+            counter: this.state.counter - 1
+        });
+    },
+
     render: function() {
-        return React.createElement('div', {onClick: this.increment},
-            React.createElement('span', {}, 'Licznik ' + this.state.counter)
+        return (
+            React.createElement('div', {
+                    className: 'counter'
+                },
+                React.createElement('div', {
+                        className: 'plus',
+                        
+                    },
+                    React.createElement('button', {onClick: this.increment}, 'PLUS')
+                ),
+                React.createElement('div', {
+                        className: 'minus',
+                    },
+                    React.createElement('button', {onClick: this.decrement}, 'MINUS')
+                ),
+                React.createElement('div', {
+                        className: 'result'
+                    },
+                    React.createElement('span', {}, this.state.counter)
+                )
+            )
         );
     }
 });
