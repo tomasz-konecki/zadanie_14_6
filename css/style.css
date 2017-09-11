@@ -3,12 +3,14 @@
 * {
     font-family: 'Russo One', sans-serif;
 }
-
 body {
     background-color: lightblue;
 }
-div {
-    .border: 1px solid blue;
+h2 {
+    color: #00485b;
+    color: #5b5b5b;
+    font-weight: 400;
+    padding-left: 30px;
 }
 .counter {
     width: 230px;

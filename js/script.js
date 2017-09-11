@@ -49,6 +49,10 @@ var Counter = React.createClass({
         }
     }),
 
-    element = React.createElement(Counter);
+    counter_1 = React.createElement(Counter),
+    counter_2 = React.createElement(Counter),
+    counter_3 = React.createElement(Counter);
 
-ReactDOM.render(element, document.getElementById('app'));
+ReactDOM.render(counter_1, document.getElementById('counter-1'));
+ReactDOM.render(counter_2, document.getElementById('counter-2'));
+ReactDOM.render(counter_2, document.getElementById('counter-3'));
