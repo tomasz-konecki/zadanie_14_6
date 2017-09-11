@@ -1,24 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron:400,700|Russo+One');
+
+* {
+    font-family: 'Russo One', sans-serif;
+}
+
 body {
     background-color: lightblue;
 }
-
 div {
-    border: 1px solid blue;
+    .border: 1px solid blue;
 }
-
 .counter {
-    width: 400px;
-    border: 1px solid coral;
+    width: 230px;
+    height: 80px;
+    padding: 30px 0 10px 15px;
+    margin: 30px 0 0 30px;
+    border: 1px solid gray;
     position: relative;
+    background-color: #00485b;
 }
-
 .plus, .minus {
-    width: 200px;
+    width: 80px;
+    margin-bottom: 10px;
 }
 .result {
-    display: inline-block;
+    width: 120px;
     position: absolute;
-    left: 200px;
-    top: 0;
-    font-size: 30px;
+    left: 100px;
+    top: 15px;
+    font-size: 70px;
+    color: #fff;
+    text-align: right;
+}
+.button-plus, 
+.button-minus {
+    width: 70px;
+}
+.button-plus {
+    background-color: #8fea8f;
+}
+.button-minus {
+    background-color: #ffa5a5;
 }
