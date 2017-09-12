@@ -24,7 +24,6 @@ var Counter = React.createClass({
                     },
                     React.createElement('div', {
                             className: 'plus',
-
                         },
                         React.createElement('button', {
                             className: 'button-plus',
