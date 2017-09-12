@@ -20,7 +20,7 @@ var Counter = React.createClass({
         },
 
         getInitialState: function() {
-            console.log('Ustawiono stan poczatkowy');
+            console.log('\nUstawiono stan poczatkowy');
             return {
                 counter: 0
             };
@@ -74,12 +74,12 @@ var Counter = React.createClass({
         },
 
         shouldComponentUpdate: function() {
-            console.log('Czy komponent wymaga aktualizacji? - TAK');
+            console.log('\nCzy komponent wymaga aktualizacji? - TAK');
             return true;
         },
 
         componentWillUpdate: function() {
-            console.log('Komponent zostanie zaktualizowany');
+            console.log('Komponent zostanie zaktualizowany.');
         },
 
         componentDidUpdate: function() {
